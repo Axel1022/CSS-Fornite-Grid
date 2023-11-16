@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: radial-gradient(#049dd9, #054cc0);
+  color: #fff;
+  height: 100vh;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+}
+.active-nav-item {
+  background-color: #fff;
+  color: black;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  transform: skew(-10deg, 0);
+}
+.text-img {
+  text-align: center;
+  font-size: 50px;
+}
+.nv-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.store-main h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 5px #0b4fbc;
+}
+
+.purple-skin {
+  background: radial-gradient(#341757, #201233);
+}
+.yellow-skin {
+  background: linear-gradient(#f1d78d, #cb5633);
+}
+.pink-skin {
+  background: linear-gradient(#ff9fff, #6e2c8d);
+}
+.skin-imagen {
+  max-width: 250px;
+  max-height: 100%;
+  filter: drop-shadow(5px 0 10px #000);
+}
+.grid-items {
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+.grid-item-1 {
+  grid-area: skin1;
+}
+.grid-item-2 {
+  grid-area: skin2;
+}
+.grid-item-3 {
+  grid-area: skin3;
+}
+.grid-item-4 {
+  grid-area: skin4;
+}
+.grid-item-5 {
+  grid-area: skin5;
+}
+.grid-item-6 {
+  grid-area: skin6;
+}
+.conteiner {
+  display: grid;
+  justify-content: center;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "skin1 skin2 skin4 skin5"
+    "skin1 skin3 skin4 skin6";
+  justify-items: stretch;
+  align-items: stretch;
+  height: 500px;
+  gap: 10px 10px;
+}
